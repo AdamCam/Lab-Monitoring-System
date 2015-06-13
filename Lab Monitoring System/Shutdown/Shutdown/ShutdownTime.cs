@@ -37,12 +37,6 @@ namespace Shutdown
         //Setup for connection
         public void Initialize()
         {
-            //this goes in the app.config file for the lab. Changed it to test charts at home.
-            /*<add key="ServerName" value="10.1.222.1"/>
-            <add key="Database" value="labdata"/>
-            <add key="UserName" value="labuser"/>
-            <add key="Password" value="lab222"/>
-            <add key ="Port" value="3306" />*/
             server = ConfigurationManager.AppSettings["ServerName"];// "localhost";
             database = ConfigurationManager.AppSettings["Database"];
             username = ConfigurationManager.AppSettings["UserName"]; //root";

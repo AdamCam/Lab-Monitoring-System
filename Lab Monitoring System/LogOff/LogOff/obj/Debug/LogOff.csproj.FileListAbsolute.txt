@@ -5,3 +5,6 @@ F:\CoOpspring\LogOff\LogOff\bin\Debug\LogOff.pdb
 F:\CoOpspring\LogOff\LogOff\bin\Debug\MySql.Data.dll
 F:\CoOpspring\LogOff\LogOff\obj\Debug\LogOff.exe
 F:\CoOpspring\LogOff\LogOff\obj\Debug\LogOff.pdb
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\LogOff\LogOff\bin\Debug\LogOff.exe.config
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\LogOff\LogOff\obj\Debug\LogOff.exe
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\LogOff\LogOff\obj\Debug\LogOff.pdb

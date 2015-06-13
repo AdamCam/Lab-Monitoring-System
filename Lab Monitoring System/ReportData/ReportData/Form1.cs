@@ -41,12 +41,6 @@ namespace ReportData
             dataGridView1.DataSource = export.GetData();
             export.To_HTML();
         }
-        //need these values in the app.config setting for the labs at school
-        /*<add key="ServerName" value="10.1.222.1"/>
-        <add key="Database" value="labdata"/>
-        <add key="UserName" value="labuser"/>
-        <add key="Password" value="lab222"/>
-        <add key ="Port" value="3306" />*/
         private void ShowData()
         {
 
@@ -70,30 +64,15 @@ namespace ReportData
                 while (myReader.Read())
                 {
                     string currentcomputer = myReader.GetString("computer");
-                    // DateTime date = myReader.GetDateTime("date").Date;
                     if (computername==string.Empty || computername!=currentcomputer) 
                     {
-                        //chartdate = date;
-                        //datevalid = true;
-                        //this.chart1.Series.Add(chartdate.ToShortDateString());
+
                         computername = currentcomputer;
                         this.chart1.Series.Add(computername);
                     }
                     this.chart1.Series[computername].Points.AddXY(myReader.GetDateTime("date"),myReader.GetInt32("sessiontime").ToString());
-                     
-                    //chart1.Series[0].XValueType = ChartValueType.DateTime;
-                    //System.DateTime x = new System.DateTime();
-                    //chart1.Series[0].Points.AddXY(x.ToOADate(), "sessiontime");;
-                    //System.DateTime dt = System.DateTime.FromOADate(chart1.Series[0].Points[0].XValue);
-                }
-/*                while (myReader.Read())
-                {
-                    this.chart1.Series["Start-Shutdown"].Points.AddXY(myReader.GetString("Computer"), myReader.GetInt32("sessiontime2").ToString());
-                    chart1.Series[1].XValueType = ChartValueType.DateTime;
-                    System.DateTime x = new System.DateTime();
-                    chart1.Series[1].Points.AddXY(x.ToOADate(), "sessiontime2");
-                    System.DateTime dt = System.DateTime.FromOADate(chart1.Series[1].Points[1].XValue);
-                }*/
+
+                }           
             }
             catch (Exception ex)
             {

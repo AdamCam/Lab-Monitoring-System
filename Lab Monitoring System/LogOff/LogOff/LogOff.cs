@@ -37,10 +37,10 @@ namespace LogOff
         //Setup for connection
         public void Initialize()
         {
-            server = ConfigurationManager.AppSettings["ServerName"];// "localhost";
+            server = ConfigurationManager.AppSettings["ServerName"];
             database = ConfigurationManager.AppSettings["Database"];
-            username = ConfigurationManager.AppSettings["UserName"]; //root";
-            password = ConfigurationManager.AppSettings["Password"]; //12345";
+            username = ConfigurationManager.AppSettings["UserName"];
+            password = ConfigurationManager.AppSettings["Password"]; 
             port = ConfigurationManager.AppSettings["Port"];
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "USERNAME=" + username + ";" + "PASSWORD=" + password + ";  port=" + port + ";"; 

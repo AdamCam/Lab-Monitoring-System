@@ -26,3 +26,6 @@ F:\CoOpspring\ReportData\ReportData\obj\Debug\ReportData.ExportData.resources
 F:\CoOpspring\ReportData\ReportData\obj\Debug\ReportData.Properties.Resources.resources
 F:\CoOpspring\ReportData\ReportData\obj\Debug\ReportData.csproj.GenerateResource.Cache
 F:\CoOpspring\ReportData\ReportData\obj\Debug\ReportData.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\ReportData\ReportData\bin\Debug\ReportData.exe.config
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\ReportData\ReportData\obj\Debug\ReportData.exe
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\ReportData\ReportData\obj\Debug\ReportData.pdb

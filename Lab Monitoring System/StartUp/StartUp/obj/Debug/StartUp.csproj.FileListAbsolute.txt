@@ -4,3 +4,6 @@ F:\CoOpspring\StartUp\StartUp\bin\Debug\StartUp.pdb
 F:\CoOpspring\StartUp\StartUp\bin\Debug\MySql.Data.dll
 F:\CoOpspring\StartUp\StartUp\obj\Debug\StartUp.exe
 F:\CoOpspring\StartUp\StartUp\obj\Debug\StartUp.pdb
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\StartUp\StartUp\bin\Debug\StartUp.exe.config
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\StartUp\StartUp\obj\Debug\StartUp.exe
+C:\Users\Adam\Desktop\Lab-Monitoring-System\Lab Monitoring System\StartUp\StartUp\obj\Debug\StartUp.pdb
