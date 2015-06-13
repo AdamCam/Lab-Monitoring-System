@@ -1,0 +1,6 @@
+F:\CoOpspring\StartUp\StartUp\bin\Debug\StartUp.exe.config
+F:\CoOpspring\StartUp\StartUp\bin\Debug\StartUp.exe
+F:\CoOpspring\StartUp\StartUp\bin\Debug\StartUp.pdb
+F:\CoOpspring\StartUp\StartUp\bin\Debug\MySql.Data.dll
+F:\CoOpspring\StartUp\StartUp\obj\Debug\StartUp.exe
+F:\CoOpspring\StartUp\StartUp\obj\Debug\StartUp.pdb

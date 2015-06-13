@@ -1,0 +1,7 @@
+F:\CoOpspring\Shutdown\Shutdown\bin\Debug\Shutdown.exe.config
+F:\CoOpspring\Shutdown\Shutdown\obj\Debug\Shutdown.csprojResolveAssemblyReference.cache
+F:\CoOpspring\Shutdown\Shutdown\bin\Debug\Shutdown.exe
+F:\CoOpspring\Shutdown\Shutdown\bin\Debug\Shutdown.pdb
+F:\CoOpspring\Shutdown\Shutdown\bin\Debug\MySql.Data.dll
+F:\CoOpspring\Shutdown\Shutdown\obj\Debug\Shutdown.exe
+F:\CoOpspring\Shutdown\Shutdown\obj\Debug\Shutdown.pdb

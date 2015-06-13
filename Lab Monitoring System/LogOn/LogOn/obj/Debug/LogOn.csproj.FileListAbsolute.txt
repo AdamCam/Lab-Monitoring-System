@@ -1,0 +1,7 @@
+F:\CoOpspring\LogOn\LogOn\bin\Debug\LogOn.exe.config
+F:\CoOpspring\LogOn\LogOn\bin\Debug\LogOn.exe
+F:\CoOpspring\LogOn\LogOn\bin\Debug\LogOn.pdb
+F:\CoOpspring\LogOn\LogOn\bin\Debug\MySql.Data.dll
+F:\CoOpspring\LogOn\LogOn\obj\Debug\LogOn.exe
+F:\CoOpspring\LogOn\LogOn\obj\Debug\LogOn.pdb
+F:\CoOpspring\LogOn\LogOn\obj\Debug\LogOn.csprojResolveAssemblyReference.cache
