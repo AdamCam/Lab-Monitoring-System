@@ -38,15 +38,9 @@ namespace LogOn
         //Setup for connection
         public void Initialize()
         {
-            //this is the App.config data to replace my computer information
-            /*<add key="ServerName" value="10.1.222.1"/>
-            <add key="Database" value="labdata"/>
-            <add key="UserName" value="labuser"/>
-            <add key="Password" value="lab222"/>
-            <add key ="Port" value="3306" />*/
 
             server = ConfigurationManager.AppSettings["ServerName"];
-            database = ConfigurationManager.AppSettings["Database"];//cnanged to Database from labdata might need to do it on the others
+            database = ConfigurationManager.AppSettings["Database"];
             username = ConfigurationManager.AppSettings["UserName"]; 
             password = ConfigurationManager.AppSettings["Password"]; 
             port = ConfigurationManager.AppSettings["Port"];
@@ -99,7 +93,6 @@ namespace LogOn
                 insertCmd.Prepare();
                 insertCmd.Parameters.AddWithValue("@start", timeStamp);
                 insertCmd.Parameters.AddWithValue("@name", Environment.GetEnvironmentVariable("COMPUTERNAME"));
-                //insertCmd.Parameters.AddWithValue("@loc", "Lab1");
                 insertCmd.Parameters.AddWithValue("@user", Environment.GetEnvironmentVariable("USERNAME"));
 
                 insertCmd.ExecuteNonQuery();

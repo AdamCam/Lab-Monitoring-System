@@ -7,6 +7,7 @@
 ///Authors: Adam M. Cameron
 ///Creation Date: 6/10/15
 ///Update History: 6/12/15
+///This program still needs work for writing to the datebase correctly
 ///******************************************************************
 using System;
 using System.Collections.Generic;

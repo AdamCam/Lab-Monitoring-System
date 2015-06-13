@@ -42,7 +42,7 @@ namespace ReportData
         public void Initialize()
         {
             server = ConfigurationManager.AppSettings["ServerName"];
-            database = ConfigurationManager.AppSettings["Database"];//changed to Database from labdata might need to do it on the others
+            database = ConfigurationManager.AppSettings["Database"];
             username = ConfigurationManager.AppSettings["UserName"];
             password = ConfigurationManager.AppSettings["Password"];
             port = ConfigurationManager.AppSettings["Port"];

@@ -94,8 +94,6 @@ namespace LogOff
                 insertCmd.Prepare();
                 insertCmd.Parameters.AddWithValue("@start", timeStamp);
                 insertCmd.Parameters.AddWithValue("@id", reader.GetInt32("idlogs"));
-                //insertCmd.Parameters.AddWithValue("@loc", "Lab1");
-                //insertCmd.Parameters.AddWithValue("@user", Environment.GetEnvironmentVariable("USERNAME"));
                 reader.Close();
                 
                 insertCmd.ExecuteNonQuery();

@@ -7,6 +7,7 @@
 ///Authors: Adam M. Cameron
 ///Creation Date: 6/10/15
 ///Update History: 6/12/15
+///This program still needs work for writing to the datebase correctly
 ///******************************************************************
 using System;
 using System.Collections.Generic;
@@ -37,10 +38,10 @@ namespace StartUp
         //Setup for connection
         public void Initialize()
         {
-            server = ConfigurationManager.AppSettings["ServerName"];// "localhost";
+            server = ConfigurationManager.AppSettings["ServerName"];
             database = ConfigurationManager.AppSettings["labdata"];
-            username = ConfigurationManager.AppSettings["UserName"]; //root";
-            password = ConfigurationManager.AppSettings["Password"]; //12345";
+            username = ConfigurationManager.AppSettings["UserName"];
+            password = ConfigurationManager.AppSettings["Password"];
             port = ConfigurationManager.AppSettings["Port"];
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "USERNAME=" + username + ";" + "PASSWORD=" + password + ";" + "port=" + port + ";";
@@ -80,29 +81,7 @@ namespace StartUp
         }
         public void StartUp()
         {
-
             //open connection
-            /*if (this.OpenConnection() == true)
-            {
-                DateTime timeStamp = DateTime.Now;
-                MySqlCommand getIdCmd = new MySqlCommand("Select idlogs from labdata.logs where computer='" + Environment.GetEnvironmentVariable("COMPUTERNAME") + "' AND shutdowntime IS NULL;", connection);
-
-                MySqlDataReader reader = getIdCmd.ExecuteReader();
-                reader.Read();
-
-                //assign the query and connection from the constructor
-                MySqlCommand insertCmd = new MySqlCommand("UPDATE labdata.logs set shutdowntime=@start WHERE idlogs=@id;", connection);
-                insertCmd.Prepare();
-                insertCmd.Parameters.AddWithValue("@start", timeStamp);
-                insertCmd.Parameters.AddWithValue("@id", reader.GetInt32("idlogs"));
-                //insertCmd.Parameters.AddWithValue("@loc", "Lab1");
-                //insertCmd.Parameters.AddWithValue("@user", Environment.GetEnvironmentVariable("USERNAME"));
-                reader.Close();
-
-                insertCmd.ExecuteNonQuery();
-                this.CloseConnection();
-            }*/
-
             if (this.OpenConnection() == true)
             {
                 DateTime timeStamp = DateTime.Now;
@@ -111,7 +90,6 @@ namespace StartUp
                 insertCmd.Prepare();
                 insertCmd.Parameters.AddWithValue("@start", timeStamp);
                 insertCmd.Parameters.AddWithValue("@name", Environment.GetEnvironmentVariable("COMPUTERNAME"));
-                //insertCmd.Parameters.AddWithValue("@loc", "Lab1");
                 insertCmd.Parameters.AddWithValue("@user", Environment.GetEnvironmentVariable("USERNAME"));
 
                 insertCmd.ExecuteNonQuery();
